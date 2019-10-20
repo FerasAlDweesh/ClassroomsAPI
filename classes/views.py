@@ -22,6 +22,7 @@ def classroom_detail(request, classroom_id):
 
 def classroom_create(request):
 	form = ClassroomForm()
+	request.user.is_authenticated == Classroom.teacher
 	if request.method == "POST":
 		form = ClassroomForm(request.POST, request.FILES or None)
 		if form.is_valid():
