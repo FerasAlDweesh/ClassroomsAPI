@@ -23,4 +23,4 @@ class ClassroomCreateSerializer(serializers.ModelSerializer):
 class ClassroomUpdateSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Classroom
-		fields = ["year", "teacher"]
+		fields = ["name", "subject", "year"]
